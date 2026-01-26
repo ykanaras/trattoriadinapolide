@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Trattoria di Napoli Restaurant — Bear, DE</title>
-  <meta name="description" content="Authentic pizza, pasta, and Italian favorites in Bear, Delaware. Dine in, takeout, or order online through our website or on Uber Eats/Doordash." />
+  <meta name="description" content="Authentic pizza, pasta, and Italian favorites in Bear, Delaware. Takeout only today—order online through our website or on Uber Eats/Doordash." />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#b91c1c" />
@@ -20,6 +20,17 @@
 
     /* 🇮🇹 top stripe */
     .flag-bar{height:6px;background:linear-gradient(90deg,#008C45 0 33.333%, #F4F5F0 33.333% 66.666%, #CD212A 66.666% 100%)}
+
+    /* 🚨 Announcement banner */
+    .announcement{
+      background:#fff3cd;
+      color:#7a4b00;
+      text-align:center;
+      padding:.65rem 1rem;
+      font-weight:800;
+      border-bottom:2px solid var(--brand);
+    }
+    .announcement a{color:inherit;text-decoration:underline}
 
     /* Header (desktop unchanged) */
     header{
@@ -115,6 +126,12 @@
 <body>
   <div class="flag-bar"></div>
 
+  <!-- Takeout-only notice -->
+  <div class="announcement">
+    🚨 Today we are open for <strong>TAKEOUT ONLY</strong>. Order online or call ahead for pickup:
+    <a href="tel:+13028387711">(302) 838-7711</a>
+  </div>
+
   <header>
     <div class="container nav" role="navigation" aria-label="Main">
       <!-- LEFT: brand -->
@@ -146,7 +163,7 @@
     <section class="hero container">
       <span class="pill">Bear, Delaware</span>
       <h1>Authentic Pizza &amp; Italian Classics</h1>
-      <p>Welcome to <strong>Trattoria di Napoli Restaurant</strong>—your neighborhood spot for hand-tossed pizzas, house-made sauces, and hearty pastas. Dine in, takeout, or order online.</p>
+      <p>Welcome to <strong>Trattoria di Napoli Restaurant</strong>—your neighborhood spot for hand-tossed pizzas, house-made sauces, and hearty pastas. <strong>Takeout only today</strong>—order online or call ahead for pickup.</p>
 
       <div class="btn-row">
         <a class="primary" href="https://www.trattoriadinapolirestaurant.com/?utm_source=gbp#menu" target="_blank" rel="noreferrer">Order &amp; View Menu Here</a>
